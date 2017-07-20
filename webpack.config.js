@@ -6,5 +6,10 @@ module.exports = {
         filename: "bundle.js",
         path:path.resolve(__dirname,'./dist'),
         publicPath: "/"
+    },
+    module: {
+        loaders: [
+            { test: /\.scss$/, loader: 'style-loader!css-loader!sass-loader' },
+        ]
     }
 };
