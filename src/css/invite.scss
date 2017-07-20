@@ -98,6 +98,21 @@ html{
         }
         .check-box{
           line-height: 4.5em;
+          .checked{
+            visibility: hidden;
+          }
+          .checked+label{
+            display:inline-block;
+            width:16px;
+            height:16px;
+            border:1px solid #ccc;
+            border-radius:16px;
+            position:relative;
+            top:-4em;
+          }
+          .checked:checked+label{
+            background: url(../images/basketball.png);
+          }
         }
       }
       .email{
