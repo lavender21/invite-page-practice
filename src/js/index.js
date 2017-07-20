@@ -1,1 +1,2 @@
-import "../css/invite.scss"
+require( "../css/invite.scss")
+require("./invite")

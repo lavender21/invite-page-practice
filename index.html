@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Invite</title>
+    <link rel="stylesheet" href="/src/css/font-awesome.min.css"/>
 </head>
 <body>
-<div class="box">
+<div class="box" id="app">
     <header>
         <div class="title">Invite people to Dribbble</div>
-        <div class="sub-title">2 invites availables</div>
-        <div class="search"></div>
+        <div class="sub-title"><span id="count">0</span> invites availables</div>
+        <div class="search-box">
+            <input type="input" id="search" />
+            <i class="fa fa-search"></i>
+        </div>
     </header>
     <main>
         <form action="">
@@ -21,7 +25,7 @@
                     <div class="contacts"><span>Belarus </span>bysmart.by</div>
                 </div>
                 <div class="check-box">
-                    <input type="checkbox"/>
+                    <input type="checkbox" class="checked"/>
                 </div>
             </div>
             <div class="contact-box">
@@ -32,7 +36,7 @@
                     <div class="contacts"><span>Ukraine Kiev</span>kuvshynova.com</div>
                 </div>
                 <div class="check-box">
-                    <input type="checkbox"/>
+                    <input type="checkbox" class="checked"/>
                 </div>
             </div>
             <div class="contact-box">
@@ -43,7 +47,7 @@
                     <div class="contacts"><span>palma de Mallorica</span>yollandagranados.com</div>
                 </div>
                 <div class="check-box">
-                    <input type="checkbox"/>
+                    <input type="checkbox" class="checked"/>
                 </div>
             </div>
             <input type="email" placeholder="Send invite by e-mail" class="email"/>
