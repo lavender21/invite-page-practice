@@ -1,3 +1,15 @@
+$search-color:#D8D8D8;
+$name-color: #89B95C;
+$skill-color: #CCCCCC;
+$contacts-color: #333333;
+$main-color: #E84F89;
+$title-font-size: 1.7em;
+$subtitle-font-size: 0.8em;
+$skill-font-size: 0.7em;
+$contacts-font-size: 0.9em;
+$email-font-size: 0.7em;
+$submit-font-size: 0.9em;
+
 html{
   height: 100%;
   font-family: Arial;
@@ -17,23 +29,22 @@ html{
     border-radius:4px;
     header{
       .title{
-        font-size: 1.7em;
+        font-size: $title-font-size;
         text-align: center;
         word-spacing: 2px;
         line-height: 55px;
         letter-spacing: 1px;
       }
       .sub-title{
-        font-size: 0.8em;
+        font-size: $subtitle-font-size;
         text-align: center;
         word-spacing: 2px;
         color:#999999;
       }
       .search-box {
         height: 5em;
-        color: #D8D8D8;
+        color: $search-color;
         line-height: 5.8em;
-        font-size: 1em;
         position: relative;
         #search{
           transition:height .5s ease;
@@ -42,14 +53,14 @@ html{
           width: 92%;
           height: 0;
           border: 0;
-          border-bottom: 1px solid #D8D8D8;
+          border-bottom: 1px solid $search-color;
           margin-right:1em;
         }
         .active{
           width: 100%;
           outline:none;
           height:1.8em;
-          border:1px solid #D8D8D8;
+          border:1px solid $search-color;
           border-radius:4px;
         }
         i{
@@ -80,16 +91,16 @@ html{
           margin-left: 1.7em;
           line-height: 1.1em;
           .name{
-            color:#89B95C;
+            color: $name-color;
           }
           .skill{
-            font-size:0.7em;
+            font-size: $skill-font-size;
             letter-spacing: 1px;
-            color:#CCCCCC;
+            color: $skill-color;
           }
           .contacts{
-            color:#333333;
-            font-size:0.9em;
+            color: $contacts-color;
+            font-size: $contacts-font-size;
             span{
               color:#A8A8A8;
               margin-right:0.6em;
@@ -103,15 +114,20 @@ html{
           }
           .checked+label{
             display:inline-block;
-            width:16px;
-            height:16px;
+            width:18px;
+            height:18px;
             border:1px solid #ccc;
-            border-radius:16px;
+            border-radius:18px;
             position:relative;
             top:-4em;
+            left:1.2em;
           }
           .checked:checked+label{
-            background: url(../images/basketball.png);
+            border:none;
+            background: url(../images/basketball.png) no-repeat center;
+            background-size:19px 19px;
+            width:19px;
+            height:19px;
           }
         }
       }
@@ -123,7 +139,7 @@ html{
         border-radius:3px;
         color:#ccc;
         text-indent: 1em;
-        font-size:0.7em;
+        font-size: $email-font-size;
         outline:none;
         letter-spacing: 1px;
 
@@ -137,11 +153,11 @@ html{
         height: 3.8em;
         margin-top: 1.9em;
         border-radius: 3px;
-        background-color: #E84F89;
+        background-color: $main-color;
         color: #fff;
         border:0;
         line-height: 3.4em;
-        font-size:0.9em;
+        font-size: $submit-font-size;
         text-transform: uppercase;
       }
 

@@ -15,6 +15,7 @@ search.addEventListener('focus',(e)=>{
     search.className = 'active';
 });
 search.addEventListener('blur',(e)=>{
+    search.value = '';
     search.className = 'search';
 });
 submit.addEventListener('click',(e)=>{
